@@ -1,11 +1,15 @@
-import './App.css';
+import React, { Component } from 'react';
+import MyComponent from './components/MyComponent';
 
-function App() {
-  return (
-    <div className='App'>
-      <h1>State and props</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* call MyComponent and passing "props" */}
+        <MyComponent title='React' />
+      </div>
+    );
+  }
 }
 
 export default App;
