@@ -92,3 +92,11 @@ function MyComponent({ title }) {
 ```
 
 Using state in functional components is a bit different. Before the end of 2018, developers were not able to access state in functional components at all. Functional components were therefore just used for returning JSX logic with props. However, with the introduction of React Hooks, this changed. Now we can set and access state in functional components, and in the modern React landscape, they are often preferred over class components. React developers will be exposed to both kinds of components on the job, so it’s imperative for us to be very familiar with both. The way React hooks work is the topic of one of the following lessons, so don’t worry about it right now. We are setting you up to say “Hey! I remember that” when it’s introduced.
+
+# Difference of Props and State
+
+We have already learned about Props and we got to know that Props are also objects that hold information to control the behavior of that particular component, sounds familiar to State indeed but props and states are nowhere near be same. Let us differentiate the two.
+
+- Props are immutable i.e. once set the props cannot be changed, while State is an observable object that is to be used to hold data that may change over time and to control the behavior after each change.
+- States can be used in Class Components, Functional components with the use of React Hooks (useState and other methods) while Props don’t have this limitation.
+- While Props are set by the parent component, State is generally updated by event handlers.
